@@ -13,6 +13,8 @@ app = FastAPI(
 origins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://tire-classifier-fullstack.vercel.app",
+    "https://tire-classifier-fullstack-bwprqggck-pas-projects-20244f71.vercel.app",
 ]
 
 app.add_middleware(
