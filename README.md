@@ -1,28 +1,43 @@
 # 🛞 Tire Safety Classifier
 
 <p align="center">
-  <img src="docs/images/demo-homepage.png" alt="Tire Safety Classifier Demo" width="900">
+  <img src="docs/images/demo-homepage.png" alt="Tire Safety Classifier full-stack application demo" width="900">
 </p>
 
 <p align="center">
-  <strong>A full-stack computer vision application for tire quality classification using ResNet50 transfer learning, FastAPI, Next.js, Vercel, and Hugging Face Spaces.</strong>
+  <strong>Full-stack tire quality classification using ResNet50 transfer learning, PyTorch, FastAPI, Next.js, Vercel, and Hugging Face Spaces.</strong>
 </p>
 
 <p align="center">
-  <a href="https://tire-classifier-fullstack.vercel.app"><strong>🌐 Live Demo</strong></a>
+  <a href="https://tire-classifier-fullstack.vercel.app"><strong>🌐 Live Application</strong></a>
   ·
-  <a href="https://promzy007-tire-classifier-backend.hf.space/api/health"><strong>⚙️ Backend Health Check</strong></a>
   ·
-  <a href="docs/demo/tire-classifier-demo.mp4"><strong>🎥 Demo Video</strong></a>
+  <a href="docs/demo/index.html"><strong>🎥 Demo Video</strong></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Frontend-Next.js-black?style=for-the-badge&logo=nextdotjs" alt="Next.js">
+  <img src="https://img.shields.io/badge/Backend-FastAPI-009688?style=for-the-badge&logo=fastapi" alt="FastAPI">
+  <img src="https://img.shields.io/badge/Model-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch" alt="PyTorch">
+  <img src="https://img.shields.io/badge/Deployment-Vercel-black?style=for-the-badge&logo=vercel" alt="Vercel">
+  <img src="https://img.shields.io/badge/ML%20Hosting-Hugging%20Face-yellow?style=for-the-badge&logo=huggingface" alt="Hugging Face">
 </p>
 
 ---
 
 ## 📌 Overview
 
-**Tire Safety Classifier** is a deployed full-stack machine learning application that classifies tire condition from uploaded images.
+**Tire Safety Classifier** is an end-to-end deployed computer vision application that predicts whether an uploaded tire image is classified as **Good** or **Bad**.
 
-The system allows a user to upload a tire image through a modern web interface. The image is sent to a FastAPI backend, processed by a PyTorch model, and returned as a structured prediction containing:
+The application combines a **ResNet50 transfer learning model** with a production-style full-stack architecture:
+
+- **Next.js frontend** for image upload, preview, and prediction display
+- **FastAPI backend** for REST API inference
+- **PyTorch + TorchVision** for model loading, preprocessing, and prediction
+- **Vercel** for frontend deployment
+- **Hugging Face Spaces Docker** for backend ML inference deployment
+
+The system allows a user to upload a tire image through a modern web interface. The image is sent to the FastAPI backend, processed by the PyTorch model, and returned as a structured prediction containing:
 
 - tire condition label
 - confidence score
@@ -33,41 +48,6 @@ Example output:
 
 ```text
 Confidence: 99.598% — Good tire, You can ride.
-```
-
-This project began as a PyTorch and Gradio learning exercise inspired by **Jannis Seemann’s hands-on PyTorch course**, then evolved into a complete full-stack machine learning application using **FastAPI**, **Next.js**, **Vercel**, and **Hugging Face Spaces**.
-
-The project demonstrates the complete workflow of taking a computer vision model from local experimentation to a deployed full-stack application.
-
----
-
-## 🎬 Demo
-
-Demo files are stored in the following structure:
-
-```text
-docs/
-├── images/
-│   └── demo-homepage.png
-└── demo/
-    └── tire-classifier-demo.mp4
-```
-
-### Demo Screenshot
-
-<p align="center">
-  <img src="docs/images/demo-homepage.png" alt="Tire Classifier Prediction Demo" width="900">
-</p>
-
-### Demo Video
-
-<p align="center">
-  <a href="docs/demo/tire-classifier-demo.mp4">
-    <img src="docs/images/demo-homepage.png" alt="Watch Demo Video" width="900">
-  </a>
-</p>
-
----
 
 ## ✅ Current Deployment Status
 
