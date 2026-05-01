@@ -11,8 +11,7 @@
 <p align="center">
   <a href="https://tire-classifier-fullstack.vercel.app"><strong>🌐 Live Application</strong></a>
   ·
-  ·
-  <a href="docs/demo/index.html"><strong>🎥 Demo Video</strong></a>
+  <a href="https://promzyadiole.github.io/tire-classifier-fullstack/docs/demo/"><strong>🎥 Demo Video</strong></a>
 </p>
 
 <p align="center">
@@ -48,6 +47,8 @@ Example output:
 
 ```text
 Confidence: 99.598% — Good tire, You can ride.
+
+```
 
 ## ✅ Current Deployment Status
 
